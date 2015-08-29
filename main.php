@@ -11,7 +11,8 @@
       
 	 $persona1 = new Persona("JOSE","PERALTA",37834655);
       $empleado1 = new Empleado("JUAN","RAMIREZ",356664421,2234,20000);
-        
+      $persona1->nuevo='ALBERTO';
+       $persona1->setNombre();	  
       $persona1->ToString();
        
       $empleado1->Tostring();
