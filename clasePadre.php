@@ -6,12 +6,12 @@
  </head>
  <body>
  <?php 
-      class Persona {
-	    private $_nombre;
+     abstract class Persona {
+	    protected $_nombre;
         protected $_apellido;
-        private $_dni;		
+        protected $_dni;		
 		  public $nuevo;
-		  private $dni;
+		  protected $dni;
 		  
 		  function __construct($nombre,$apellido,$dni){
 			    $this->_nombre=$nombre;
@@ -37,12 +37,15 @@
 		  
 		  
 		  
-		  function ToString(){
+		 public function ToString(){
 			 echo "<h1>"."NOMBRE Y APELLIDO: ".$this->getNombre() ." &nbsp;".$this->_apellido." <br>DNI:".$this->getDni()."</h1>"
 				;
 				 
 			  
 		  }
+		abstract function Hablar($idioma);
+		  
+		  
 		  
 		  
 		  
